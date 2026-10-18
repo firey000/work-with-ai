@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Каталог — ПКХаб</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="index.html" class="logo">ПК<span>Хаб</span></a>
+      <form class="search" onsubmit="return false">
+        <input type="text" placeholder="Поиск: видеокарта, процессор, монитор...">
+        <button type="submit">Найти</button>
+      </form>
+      <div class="header__icons">
+        <a href="#"><span class="ico">❤️</span>Избранное</a>
+        <a href="#"><span class="ico">🛒</span>Корзина<span class="cart-badge" id="cartCount">0</span></a>
+        <a href="#"><span class="ico">👤</span>Профиль</a>
+      </div>
+    </div>
+  </div>
+  <nav class="nav">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="product.html">Видеокарты</a></li>
+        <li><a href="#">Процессоры</a></li>
+        <li><a href="#">Материнские платы</a></li>
+        <li><a href="#">Мониторы</a></li>
+        <li><a href="#">Клавиатуры и мыши</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+<main class="container">
+  <h1 class="page-title">Каталог товаров</h1>
+  <div class="crumbs"><a href="index.html">Главная</a> / Каталог</div>
+
+  <div class="catalog">
+    <aside class="filters">
+      <h4>Категория</h4>
+      <label><input type="checkbox" checked> Видеокарты</label>
+      <label><input type="checkbox"> Процессоры</label>
+      <label><input type="checkbox"> Мониторы</label>
+      <label><input type="checkbox"> Периферия</label>
+      <h4>Цена, ₽</h4>
+      <input type="number" placeholder="от 20 000">
+      <input type="number" placeholder="до 150 000">
+      <h4>Бренд</h4>
+      <label><input type="checkbox" checked> NVIDIA</label>
+      <label><input type="checkbox" checked> AMD</label>
+      <label><input type="checkbox"> Intel</label>
+      <h4>Рейтинг</h4>
+      <label><input type="checkbox"> ★ 4.5 и выше</label>
+      <label><input type="checkbox"> ★ 4.0 и выше</label>
+      <button class="btn" onclick="applyFilters()">Применить</button>
+    </aside>
+
+    <div>
+      <div class="toolbar">
+        <span class="count-note">Найдено: <b id="count">6</b> товаров</span>
+        <select onchange="sortCards(this.value)">
+          <option value="pop">Сначала популярные</option>
+          <option value="cheap">Сначала дешевле</option>
+          <option value="exp">Сначала дороже</option>
+          <option value="rate">По рейтингу</option>
+        </select>
+      </div>
+      <div class="grid grid--3" id="cards">
+        
+<div class="pcard">
+  <div class="pcard__img-wrap">
+    <div class="pcard__img">🎛️</div>
+    <span class="badge badge--hit">Хит</span>
+  </div>
+  <h3><a href="product.html">Видеокарта Palit GeForce RTX 4070 Ti SUPER GamingPro 16GB</a></h3>
+  <div class="rate">★ 4.9 <em>(812 отзывов)</em></div>
+  <div class="pcard__price">
+    <div class="price">74 990 ₽<s>89 990 ₽</s></div>
+    <button class="mini-btn" onclick="addToCart()">🛒</button>
+  </div>
+</div>
+        
+<div class="pcard">
+  <div class="pcard__img-wrap">
+    <div class="pcard__img">🎛️</div>
+    <span class="badge badge--sale">-10%</span>
+  </div>
+  <h3><a href="product.html">Видеокарта MSI GeForce RTX 4060 VENTUS 2X 8GB</a></h3>
+  <div class="rate">★ 4.8 <em>(2 140 отзывов)</em></div>
+  <div class="pcard__price">
+    <div class="price">33 990 ₽<s>37 990 ₽</s></div>
+    <button class="mini-btn" onclick="addToCart()">🛒</button>
+  </div>
+</div>
+        
+<div class="pcard">
+  <div class="pcard__img-wrap">
+    <div class="pcard__img">🎛️</div>
+    <span class="badge badge--new">Новинка</span>
+  </div>
+  <h3><a href="product.html">Видеокарта Sapphire Radeon RX 7800 XT PULSE 16GB</a></h3>
+  <div class="rate">★ 4.7 <em>(436 отзывов)</em></div>
+  <div class="pcard__price">
+    <div class="price">47 990 ₽<s>54 990 ₽</s></div>
+    <button class="mini-btn" onclick="addToCart()">🛒</button>
+  </div>
+</div>
+        
+<div class="pcard">
+  <div class="pcard__img-wrap">
+    <div class="pcard__img">🎛️</div>
+    <span class="badge badge--hit">Хит</span>
+  </div>
+  <h3><a href="product.html">Видеокарта ASUS ROG Strix GeForce RTX 4080 SUPER OC 16GB</a></h3>
+  <div class="rate">★ 5.0 <em>(318 отзывов)</em></div>
+  <div class="pcard__price">
+    <div class="price">124 990 ₽<s>139 990 ₽</s></div>
+    <button class="mini-btn" onclick="addToCart()">🛒</button>
+  </div>
+</div>
+        
+<div class="pcard">
+  <div class="pcard__img-wrap">
+    <div class="pcard__img">⚙️</div>
+    <span class="badge badge--sale">-12%</span>
+  </div>
+  <h3><a href="product.html">Процессор AMD Ryzen 7 7800X3D, AM5</a></h3>
+  <div class="rate">★ 4.8 <em>(1 340 отзывов)</em></div>
+  <div class="pcard__price">
+    <div class="price">42 990 ₽<s>48 990 ₽</s></div>
+    <button class="mini-btn" onclick="addToCart()">🛒</button>
+  </div>
+</div>
+        
+<div class="pcard">
+  <div class="pcard__img-wrap">
+    <div class="pcard__img">🖥️</div>
+    <span class="badge badge--hit">Хит</span>
+  </div>
+  <h3><a href="product.html">Монитор 27" Samsung Odyssey G5 165 Гц</a></h3>
+  <div class="rate">★ 4.7 <em>(524 отзывов)</em></div>
+  <div class="pcard__price">
+    <div class="price">27 490 ₽<s>32 990 ₽</s></div>
+    <button class="mini-btn" onclick="addToCart()">🛒</button>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__cols">
+      <div>
+        <b class="logo" style="font-size:20px">ПК<span style="color:var(--accent)">Хаб</span></b>
+        <p style="margin-top:10px">Интернет-магазин комплектующих<br>и периферии для ПК.<br><br>8 800 555-00-00 (бесплатно)<br>help@pckhub.ru</p>
+      </div>
+      <div><b>Каталог</b><ul><li><a href="#">Видеокарты</a></li><li><a href="#">Процессоры</a></li><li><a href="#">Мониторы</a></li><li><a href="#">Периферия</a></li></ul></div>
+      <div><b>Покупателям</b><ul><li><a href="#">Доставка</a></li><li><a href="#">Оплата</a></li><li><a href="#">Гарантия</a></li><li><a href="#">Возврат</a></li></ul></div>
+      <div><b>Компания</b><ul><li><a href="#">О нас</a></li><li><a href="#">Магазины</a></li><li><a href="#">Вакансии</a></li><li><a href="#">Контакты</a></li></ul></div>
+    </div>
+    <div class="footer__bottom">© 2026 ПКХаб. Демо-сайт, создан нейросетью в рамках учебного проекта.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

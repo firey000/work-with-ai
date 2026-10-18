@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Видеокарта Palit RTX 4070 Ti SUPER — ПКХаб</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="index.html" class="logo">ПК<span>Хаб</span></a>
+      <form class="search" onsubmit="return false">
+        <input type="text" placeholder="Поиск: видеокарта, процессор, монитор...">
+        <button type="submit">Найти</button>
+      </form>
+      <div class="header__icons">
+        <a href="#"><span class="ico">❤️</span>Избранное</a>
+        <a href="#"><span class="ico">🛒</span>Корзина<span class="cart-badge" id="cartCount">0</span></a>
+        <a href="#"><span class="ico">👤</span>Профиль</a>
+      </div>
+    </div>
+  </div>
+  <nav class="nav">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="product.html">Видеокарты</a></li>
+        <li><a href="#">Процессоры</a></li>
+        <li><a href="#">Материнские платы</a></li>
+        <li><a href="#">Мониторы</a></li>
+        <li><a href="#">Клавиатуры и мыши</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+<main class="container">
+  <div class="crumbs" style="margin-top:24px"><a href="index.html">Главная</a> / <a href="catalog.html">Каталог</a> / Видеокарты / Palit GeForce RTX 4070 Ti SUPER</div>
+
+  <div class="product">
+    <div class="gallery">
+      <div class="gallery__main" id="mainImg">🎛️</div>
+      <div class="gallery__thumbs">
+        <div class="active" onclick="setImg(this,'🎛️')">🎛️</div>
+        <div onclick="setImg(this,'🔌')">🔌</div>
+        <div onclick="setImg(this,'💨')">💨</div>
+        <div onclick="setImg(this,'📦')">📦</div>
+      </div>
+    </div>
+
+    <div class="p-info">
+      <h1>Видеокарта Palit GeForce RTX 4070 Ti SUPER GamingPro 16GB (NED407TS19K9-1043A)</h1>
+      <div class="rate">★★★★★ 4.9 <em>· 812 отзывов · 2 340 купили</em></div>
+
+      <div class="buy-box">
+        <div class="price">74 990 ₽ <s style="font-size:16px;color:var(--muted)">89 990 ₽</s></div>
+        <div class="stock">✔ В наличии — 14 шт. · заберите сегодня</div>
+        <button class="btn" onclick="addToCart()">Купить</button>
+        <button class="btn btn--ghost" onclick="addToCart()">В корзину</button>
+      </div>
+
+      <table class="specs" style="margin-top:22px">
+        <tr><td>Графический процессор</td><td>NVIDIA GeForce RTX 4070 Ti SUPER</td></tr>
+        <tr><td>Объём памяти</td><td>16 ГБ GDDR6X</td></tr>
+        <tr><td>Разрядность шины</td><td>256 бит</td></tr>
+        <tr><td>Частота GPU (Boost)</td><td>2610 МГц</td></tr>
+        <tr><td>Интерфейс</td><td>PCI-E 4.0</td></tr>
+        <tr><td>Разъёмы</td><td>HDMI 2.1 ×1, DisplayPort 1.4a ×3</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <section class="section" style="margin-top:0">
+    <div class="tabs">
+      <div class="tabs__nav">
+        <button class="active" onclick="showTab(0,this)">Описание</button>
+        <button onclick="showTab(1,this)">Характеристики</button>
+        <button onclick="showTab(2,this)">Отзывы (812)</button>
+      </div>
+      <div class="tab-pane active">
+        <p>Palit GeForce RTX 4070 Ti SUPER GamingPro — флагманский ускоритель на архитектуре Ada Lovelace для игр в 2K и 4K разрешении.
+        Технологии DLSS 3.5 с генерацией кадров, трассировка лучей 3-го поколения и 16 ГБ памяти GDDR6X обеспечивают плавный геймплей
+        в любых современных AAA-тайтлах. Система охлаждения с двумя 100-мм вентиляторами работает тихо даже под полной нагрузкой,
+        а металлический бэкплейт защищает PCB и улучшает отвод тепла.</p>
+      </div>
+      <div class="tab-pane">
+        <table class="specs">
+          <tr><td>GPU</td><td>AD103, 8448 ядер CUDA</td></tr>
+          <tr><td>Частота памяти</td><td>21 Гбит/с</td></tr>
+          <tr><td>TDP</td><td>285 Вт, рекомендуемый БП от 750 Вт</td></tr>
+          <tr><td>Питание</td><td>1 × 16-pin (12VHPWR)</td></tr>
+          <tr><td>Охлаждение</td><td>Два вентилятора 100 мм, 6 теплотрубок</td></tr>
+          <tr><td>Габариты</td><td>328 × 139 × 45 мм</td></tr>
+        </table>
+      </div>
+      <div class="tab-pane">
+        <div class="review"><b>Дмитрий К.</b> <span class="rate">★★★★★</span><p style="margin-top:6px">Тянет Cyberpunk в 4K с DLSS на ультрах, температура до 68 градусов. Шумно не крутится вообще. Рекомендую.</p></div>
+        <div class="review"><b>Артём В.</b> <span class="rate">★★★★★</span><p style="margin-top:6px">Брал для рендеринга в Blender — летает. Доставили на следующий день, всё запечатано.</p></div>
+        <div class="review"><b>Сергей М.</b> <span class="rate">★★★★☆</span><p style="margin-top:6px">Карта отличная, но блок питания пришлось менять на 850 Вт. Берите сразу с запасом.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section__head"><h2>Похожие товары</h2></div>
+    <div class="grid">
+      
+<div class="pcard">
+  <div class="pcard__img-wrap">
+    <div class="pcard__img">🎛️</div>
+    <span class="badge badge--sale">-10%</span>
+  </div>
+  <h3><a href="product.html">Видеокарта MSI GeForce RTX 4060 VENTUS 2X 8GB</a></h3>
+  <div class="rate">★ 4.8 <em>(2 140 отзывов)</em></div>
+  <div class="pcard__price">
+    <div class="price">33 990 ₽<s>37 990 ₽</s></div>
+    <button class="mini-btn" onclick="addToCart()">🛒</button>
+  </div>
+</div>
+      
+<div class="pcard">
+  <div class="pcard__img-wrap">
+    <div class="pcard__img">🎛️</div>
+    <span class="badge badge--new">Новинка</span>
+  </div>
+  <h3><a href="product.html">Видеокарта Sapphire Radeon RX 7800 XT PULSE 16GB</a></h3>
+  <div class="rate">★ 4.7 <em>(436 отзывов)</em></div>
+  <div class="pcard__price">
+    <div class="price">47 990 ₽<s>54 990 ₽</s></div>
+    <button class="mini-btn" onclick="addToCart()">🛒</button>
+  </div>
+</div>
+      
+<div class="pcard">
+  <div class="pcard__img-wrap">
+    <div class="pcard__img">🎛️</div>
+    <span class="badge badge--hit">Хит</span>
+  </div>
+  <h3><a href="product.html">Видеокарта ASUS ROG Strix RTX 4080 SUPER OC 16GB</a></h3>
+  <div class="rate">★ 5.0 <em>(318 отзывов)</em></div>
+  <div class="pcard__price">
+    <div class="price">124 990 ₽<s>139 990 ₽</s></div>
+    <button class="mini-btn" onclick="addToCart()">🛒</button>
+  </div>
+</div>
+      
+<div class="pcard">
+  <div class="pcard__img-wrap">
+    <div class="pcard__img">⚙️</div>
+    <span class="badge badge--sale">-12%</span>
+  </div>
+  <h3><a href="product.html">Процессор AMD Ryzen 7 7800X3D, AM5</a></h3>
+  <div class="rate">★ 4.8 <em>(1 340 отзывов)</em></div>
+  <div class="pcard__price">
+    <div class="price">42 990 ₽<s>48 990 ₽</s></div>
+    <button class="mini-btn" onclick="addToCart()">🛒</button>
+  </div>
+</div>
+    </div>
+  </section>
+</main>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__cols">
+      <div>
+        <b class="logo" style="font-size:20px">ПК<span style="color:var(--accent)">Хаб</span></b>
+        <p style="margin-top:10px">Интернет-магазин комплектующих<br>и периферии для ПК.<br><br>8 800 555-00-00 (бесплатно)<br>help@pckhub.ru</p>
+      </div>
+      <div><b>Каталог</b><ul><li><a href="#">Видеокарты</a></li><li><a href="#">Процессоры</a></li><li><a href="#">Мониторы</a></li><li><a href="#">Периферия</a></li></ul></div>
+      <div><b>Покупателям</b><ul><li><a href="#">Доставка</a></li><li><a href="#">Оплата</a></li><li><a href="#">Гарантия</a></li><li><a href="#">Возврат</a></li></ul></div>
+      <div><b>Компания</b><ul><li><a href="#">О нас</a></li><li><a href="#">Магазины</a></li><li><a href="#">Вакансии</a></li><li><a href="#">Контакты</a></li></ul></div>
+    </div>
+    <div class="footer__bottom">© 2026 ПКХаб. Демо-сайт, создан нейросетью в рамках учебного проекта.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

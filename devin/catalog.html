@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="css/style.css"><title>Каталог — ВОЛЬТ</title></head>
+<body>
+<main class="container">
+  <div class="crumbs"><a href="index.html">Главная</a><span><a href="catalog.html">Каталог</a></span><span id="crumb"></span></div>
+  <div class="cat-title"><h1>Каталог</h1><span></span></div>
+  <div class="chips"></div>
+  <div class="catalog">
+    <aside class="filters">
+      <div class="f-block"><h4>Цена, ₽</h4><div class="price-inputs"><input id="pmin" type="number" min="0"><input id="pmax" type="number" min="0"></div><input type="range" id="prange"></div>
+      <div class="f-block"><h4>Производитель</h4><div id="brands"></div></div>
+      <div class="f-block"><h4>Рейтинг</h4>
+        <label class="check"><input type="radio" name="rating" value="4.8">★ 4.8 и выше</label>
+        <label class="check"><input type="radio" name="rating" value="4.5">★ 4.5 и выше</label>
+        <label class="check"><input type="radio" name="rating" value="0">Любой</label></div>
+      <div class="f-block"><label class="switch">Много в наличии<input type="checkbox" id="instock"></label></div>
+      <div class="f-actions"><button class="btn btn-accent" id="apply">Применить</button><button class="btn btn-outline" id="reset">Сбросить</button></div>
+    </aside>
+    <div>
+      <div class="toolbar">
+        <button class="btn btn-outline filter-toggle"><svg class="icon" viewBox="0 0 24 24"><path d="M22 3H2l8 9.5V19l4 2v-8.5z"/></svg> Фильтры</button>
+        <label>Сортировка: <select id="sort"><option value="popular">по популярности</option><option value="cheap">сначала дешёвые</option><option value="expensive">сначала дорогие</option><option value="rating">по рейтингу</option><option value="discount">по размеру скидки</option></select></label>
+        <div class="view-btns"><button data-view="grid" aria-label="Плитка"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></button><button data-view="list" aria-label="Список"><svg class="icon" viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></button></div>
+      </div>
+      <div class="grid" id="products"></div>
+      <div class="no-results" hidden><h3>Ничего не найдено</h3><p>Попробуйте изменить параметры фильтра или поисковый запрос</p></div>
+      <div class="more"></div>
+    </div>
+  </div>
+  <section class="seo"><h2>Комплектующие для ПК в интернет-магазине ВОЛЬТ</h2>
+    <p>В каталоге ВОЛЬТ представлены видеокарты, процессоры, материнские платы, оперативная память, накопители и периферия от ведущих производителей: NVIDIA, AMD, Intel, ASUS, MSI, GIGABYTE, Kingston, Logitech и других.</p>
+    <p>Используйте фильтры, чтобы подобрать товар по цене, бренду и рейтингу. Все товары имеют официальную гарантию, а при покупке комплектующих мы бесплатно соберём ваш компьютер.</p></section>
+</main>
+<script src="js/data.js"></script><script src="js/images.js"></script><script src="js/common.js"></script><script src="js/catalog.js"></script>
+</body>
+</html>
